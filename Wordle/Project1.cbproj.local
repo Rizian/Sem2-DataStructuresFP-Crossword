@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/06/04 20:37:48.000.687,=C:\Users\WINDOWS10\Desktop\C++ Builder\Project1PCH1.h</Transaction>
+    <Transaction>2022/06/04 20:37:48.000.117,=C:\Users\WINDOWS10\Desktop\C++ Builder\Unit1.cpp</Transaction>
+    <Transaction>2022/06/04 20:38:56.000.458,C:\Users\WINDOWS10\Desktop\C++ Builder\Unit1.h=C:\Users\WINDOWS10\Desktop\C++ Builder\Wordle\Wordle.h</Transaction>
+    <Transaction>2022/06/04 20:38:56.000.458,C:\Users\WINDOWS10\Desktop\C++ Builder\Unit1.fmx=C:\Users\WINDOWS10\Desktop\C++ Builder\Wordle\Wordle.fmx</Transaction>
+    <Transaction>2022/06/04 20:38:56.000.458,C:\Users\WINDOWS10\Desktop\C++ Builder\Unit1.cpp=C:\Users\WINDOWS10\Desktop\C++ Builder\Wordle\Wordle.cpp</Transaction>
+    <Transaction>2022/06/04 20:43:14.000.024,C:\Users\WINDOWS10\Desktop\C++ Builder\Project1PCH1.h=C:\Users\WINDOWS10\Desktop\C++ Builder\Wordle\Project1PCH1.h</Transaction>
+    <Transaction>2022/06/04 20:43:16.000.746,C:\Users\WINDOWS10\Desktop\C++ Builder\Project1.cbproj=C:\Users\WINDOWS10\Desktop\C++ Builder\Wordle\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,316 @@
+//---------------------------------------------------------------------------
+
+#include <fmx.h>
+#pragma hdrstop
+
+#include "Wordle.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.fmx"
+TForm1 *Form1;
+
+int State = 1;
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+	: TForm(Owner)
+{
+
+
+}
+//---------------------------------------------------------------------------
+
+
+
+void __fastcall TForm1::QClick(TObject *Sender)
+{
+	switch (State){
+        case 1:
+			Disp1->Text = "Q";
+			State ++;
+			break;
+		case 2:
+			Disp2->Text = "Q";
+			State ++;
+			break;
+		case 3:
+            Disp3->Text = "Q";
+			State ++;
+			break;
+		case 4:
+			Disp4->Text = "Q";
+			State ++;
+			break;
+		case 5:
+            Disp5->Text = "Q";
+			break;
+	}
+
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::WClick(TObject *Sender)
+{
+    switch (State){
+        case 1:
+			Disp1->Text = "W";
+			State ++;
+			break;
+		case 2:
+			Disp2->Text = "W";
+			State ++;
+			break;
+		case 3:
+			Disp3->Text = "W";
+			State ++;
+			break;
+		case 4:
+			Disp4->Text = "W";
+			State ++;
+			break;
+		case 5:
+			Disp5->Text = "W";
+			break;
+	}
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::EClick(TObject *Sender)
+{
+   switch (State){
+        case 1:
+			Disp1->Text = "E";
+			State ++;
+			break;
+		case 2:
+			Disp2->Text = "E";
+			State ++;
+			break;
+		case 3:
+			Disp3->Text = "E";
+			State ++;
+			break;
+		case 4:
+			Disp4->Text = "E";
+			State ++;
+			break;
+		case 5:
+			Disp5->Text = "E";
+			break;
+	}
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::RClick(TObject *Sender)
+{
+   switch (State){
+        case 1:
+			Disp1->Text = "R";
+			State ++;
+			break;
+		case 2:
+			Disp2->Text = "R";
+			State ++;
+			break;
+		case 3:
+			Disp3->Text = "R";
+			State ++;
+			break;
+		case 4:
+			Disp4->Text = "R";
+			State ++;
+			break;
+		case 5:
+			Disp5->Text = "R";
+			break;
+	}
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::TClick(TObject *Sender)
+{
+   switch (State){
+        case 1:
+			Disp1->Text = "T";
+			State ++;
+			break;
+		case 2:
+			Disp2->Text = "T";
+			State ++;
+			break;
+		case 3:
+			Disp3->Text = "T";
+			State ++;
+			break;
+		case 4:
+			Disp4->Text = "T";
+			State ++;
+			break;
+		case 5:
+			Disp5->Text = "T";
+			break;
+	}
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::YClick(TObject *Sender)
+{
+   switch (State){
+        case 1:
+			Disp1->Text = "Y";
+			State ++;
+			break;
+		case 2:
+			Disp2->Text = "Y";
+			State ++;
+			break;
+		case 3:
+			Disp3->Text = "Y";
+			State ++;
+			break;
+		case 4:
+			Disp4->Text = "Y";
+			State ++;
+			break;
+		case 5:
+			Disp5->Text = "Y";
+			break;
+	}
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::UClick(TObject *Sender)
+{
+   switch (State){
+        case 1:
+			Disp1->Text = "U";
+			State ++;
+			break;
+		case 2:
+			Disp2->Text = "U";
+			State ++;
+			break;
+		case 3:
+			Disp3->Text = "U";
+			State ++;
+			break;
+		case 4:
+			Disp4->Text = "U";
+			State ++;
+			break;
+		case 5:
+			Disp5->Text = "U";
+            State ++;
+			break;
+	}
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::IClick(TObject *Sender)
+{
+   switch (State){
+        case 1:
+			Disp1->Text = "I";
+			State ++;
+			break;
+		case 2:
+			Disp2->Text = "I";
+			State ++;
+			break;
+		case 3:
+			Disp3->Text = "I";
+			State ++;
+			break;
+		case 4:
+			Disp4->Text = "I";
+			State ++;
+			break;
+		case 5:
+			Disp5->Text = "I";
+			State ++;
+			break;
+	}
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::OClick(TObject *Sender)
+{
+   switch (State){
+        case 1:
+			Disp1->Text = "O";
+			State ++;
+			break;
+		case 2:
+			Disp2->Text = "O";
+			State ++;
+			break;
+		case 3:
+			Disp3->Text = "O";
+			State ++;
+			break;
+		case 4:
+			Disp4->Text = "O";
+			State ++;
+			break;
+		case 5:
+			Disp5->Text = "O";
+			State ++;
+			break;
+	}
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::PClick(TObject *Sender)
+{
+   switch (State){
+		case 1:
+			Disp1->Text = "P";
+			State ++;
+			break;
+		case 2:
+			Disp2->Text = "P";
+			State ++;
+			break;
+		case 3:
+			Disp3->Text = "P";
+			State ++;
+			break;
+		case 4:
+			Disp4->Text = "P";
+			State ++;
+			break;
+		case 5:
+			Disp5->Text = "P";
+			State ++;
+			break;
+	}
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TForm1::DelClick(TObject *Sender)
+{
+	switch (State){
+		case 1:
+			Disp1->Text = " ";
+			break;
+		case 2:
+			Disp2->Text = " ";
+			State --;
+			break;
+		case 3:
+			Disp3->Text = " ";
+			State --;
+			break;
+		case 4:
+			Disp4->Text = " ";
+			State --;
+			break;
+		case 5:
+			Disp5->Text = " ";
+            State --;
+			break;
+	}
+
+}
+//---------------------------------------------------------------------------
+
