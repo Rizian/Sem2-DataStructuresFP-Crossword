@@ -1,15 +1,30 @@
 //---------------------------------------------------------------------------
-
+#include <iostream>
+#include <string>
 #include <fmx.h>
+#include <random>
 #pragma hdrstop
 
 #include "Wordle.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.fmx"
+
 TForm1 *Form1;
 
+
 int State = 1;
+std::string AnsKey[] =  {"MONKE", "FROTH", "FLUID"};
+
+//---------------------------------------------------------------------------
+
+std::string selectAnsKey(){
+
+	return AnsKey[std::randint(0,2)];
+}
+std::string key (selectAnsKey());
+
+
 //---------------------------------------------------------------------------
 __fastcall TForm1::TForm1(TComponent* Owner)
 	: TForm(Owner)
@@ -18,7 +33,6 @@ __fastcall TForm1::TForm1(TComponent* Owner)
 
 }
 //---------------------------------------------------------------------------
-
 
 
 void __fastcall TForm1::QClick(TObject *Sender)
@@ -752,6 +766,30 @@ void __fastcall TForm1::MClick(TObject *Sender)
 			Disp5->Text = "M";
 			State ++;
 			break;
+	}
+}
+//---------------------------------------------------------------------------
+
+
+
+void __fastcall TForm1::Disp1Click(TObject *Sender)
+{
+   if(key[0] == Disp1->Text){
+		Disp1->FontColor=claLawngreen;
+   }else if(key.find(Disp1->Text)){
+
+   }
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::CheckClick(TObject *Sender)
+{
+	for(int i = 0; i < 5; i++){
+        String a = key[i];
+		if(key[0] == Disp1->Text){
+            Disp1->FontColor=claLawngreen;
+		}else if(a == Disp1->Text && i != 1){
+		}
 	}
 }
 //---------------------------------------------------------------------------

@@ -10,6 +10,9 @@
 #include <FMX.Edit.hpp>
 #include <FMX.StdCtrls.hpp>
 #include <FMX.Types.hpp>
+#include <FMX.Layouts.hpp>
+#include <FMX.ListBox.hpp>
+#include <FMX.Colors.hpp>
 //---------------------------------------------------------------------------
 class TForm1 : public TForm
 {
@@ -47,6 +50,7 @@ __published:	// IDE-managed Components
 	TButton *Disp4;
 	TButton *Disp5;
 	TButton *Del;
+	TButton *Check;
 	void __fastcall QClick(TObject *Sender);
 	void __fastcall WClick(TObject *Sender);
 	void __fastcall EClick(TObject *Sender);
@@ -74,6 +78,8 @@ __published:	// IDE-managed Components
 	void __fastcall BClick(TObject *Sender);
 	void __fastcall NClick(TObject *Sender);
 	void __fastcall MClick(TObject *Sender);
+	void __fastcall Disp1Click(TObject *Sender);
+	void __fastcall CheckClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TForm1(TComponent* Owner);
