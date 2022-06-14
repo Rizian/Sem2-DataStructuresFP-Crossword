@@ -1,1 +1,1 @@
-# Sem2-DataStructuresFP-Crossword
+# Sem2-DataStructuresFP-Wordle
