@@ -1,15 +1,20 @@
 #include <iostream>
 #include <experimental/random>
+#include <bits/stdc++.h>
+#include <array>
 
 using namespace std;
 
 int attempts = 6;
 bool run = true;
 char ans1,ans2,ans3,ans4,ans5;
-string AnsKey[] =  {"MONKE", "FROTH", "FLUID"};
+string AnsKey[] =  {"FROTH", "FLUID", "MONKE","GOOSE","ATONE","MOUTH","PLAIN"};
+array<int,7> s= {0,1,2,3,4,5,6};
+unsigned seed = 1;
 
 string selectAnsKey(){
-    return AnsKey[experimental::randint(0,2)];
+        shuffle(s.begin(),s.end(),default_random_engine(seed));
+        return AnsKey[s[1]];
 }
 string key = selectAnsKey();
 
@@ -20,7 +25,7 @@ int main()
     while(run){
         if(attempts < 1){
             cout<<"GAME OVER"<<endl;
-            break;
+            run == false;
         }
         cout<<" "<<endl;
         cout<<"You have "<<attempts<<" attempts left."<<endl;
@@ -87,8 +92,10 @@ int main()
         }else {
                 cout<<char5<<" Does not exist in word."<<endl;
         }
-        if(concat == key){
+
+        if(concat == key && run == true){
                 cout<<"YOU WON!! CONGRATULATIONS.";
+                run = false;
         }
         attempts --;
     }
