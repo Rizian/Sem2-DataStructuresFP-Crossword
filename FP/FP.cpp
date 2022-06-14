@@ -1,6 +1,5 @@
 #include <iostream>
 #include <experimental/random>
-#include <array>
 
 using namespace std;
 
@@ -37,7 +36,7 @@ int main()
         char char4 = toupper(ans4);
         char char5 = toupper(ans5);
 
-        array<char,5> concat = {char1,char2,char3,char4,char5};
+        char concat [] = {char1,char2,char3,char4,char5};
 
         if(sizeof(concat) > 5){
                 cout<<"Please enter 5-letter words!!"<<endl;
@@ -89,7 +88,7 @@ int main()
                 cout<<char5<<" Does not exist in word."<<endl;
         }
         if(concat == key){
-                cout<<"YOU WON!! CONGRATULATIONS."<<endl;
+                cout<<"YOU WON!! CONGRATULATIONS.";
         }
         attempts --;
     }
