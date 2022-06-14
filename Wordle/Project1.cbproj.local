@@ -9,4 +9,12 @@
     <Transaction>2022/06/04 20:43:14.000.024,C:\Users\WINDOWS10\Desktop\C++ Builder\Project1PCH1.h=C:\Users\WINDOWS10\Desktop\C++ Builder\Wordle\Project1PCH1.h</Transaction>
     <Transaction>2022/06/04 20:43:16.000.746,C:\Users\WINDOWS10\Desktop\C++ Builder\Project1.cbproj=C:\Users\WINDOWS10\Desktop\C++ Builder\Wordle\Project1.cbproj</Transaction>
   </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Project1.cpp"/>
+    <File Path="Project1PCH1.h"/>
+    <File Path="Wordle.cpp"/>
+    <File Path="Wordle.cpp"/>
+    <File Path="Wordle.fmx"/>
+    <File Path="Wordle.h"/>
+  </ProjectSortOrder>
 </BorlandProject>

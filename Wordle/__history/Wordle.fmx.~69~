@@ -8,7 +8,6 @@ object Form1: TForm1
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
-  FullScreen = True
   ShowFullScreenIcon = True
   DesignerMasterStyle = 0
   object Title: TLabel
@@ -343,14 +342,5 @@ object Form1: TForm1
     TabOrder = 33
     Text = 'Check'
     OnClick = CheckClick
-  end
-  object ColorButton1: TColorButton
-    Color = claNull
-    Position.X = 216.000000000000000000
-    Position.Y = 240.000000000000000000
-    Size.Width = 80.000000000000000000
-    Size.Height = 78.000000000000000000
-    Size.PlatformDefault = False
-    TabOrder = 35
   end
 end

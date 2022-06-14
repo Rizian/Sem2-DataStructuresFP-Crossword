@@ -291,6 +291,8 @@ object Form1: TForm1
     Size.Height = 81.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 31
+    Text = 'a'
+    OnClick = Disp1Click
   end
   object Disp2: TButton
     Position.X = 304.000000000000000000

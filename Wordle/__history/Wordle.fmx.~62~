@@ -291,6 +291,7 @@ object Form1: TForm1
     Size.Height = 81.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 31
+    OnClick = Disp1Click
   end
   object Disp2: TButton
     Position.X = 304.000000000000000000
@@ -343,14 +344,5 @@ object Form1: TForm1
     TabOrder = 33
     Text = 'Check'
     OnClick = CheckClick
-  end
-  object ColorButton1: TColorButton
-    Color = claDarkgray
-    Position.X = 216.000000000000000000
-    Position.Y = 232.000000000000000000
-    Size.Width = 80.000000000000000000
-    Size.Height = 78.000000000000000000
-    Size.PlatformDefault = False
-    TabOrder = 35
   end
 end

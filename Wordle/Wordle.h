@@ -78,7 +78,6 @@ __published:	// IDE-managed Components
 	void __fastcall BClick(TObject *Sender);
 	void __fastcall NClick(TObject *Sender);
 	void __fastcall MClick(TObject *Sender);
-	void __fastcall Disp1Click(TObject *Sender);
 	void __fastcall CheckClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations

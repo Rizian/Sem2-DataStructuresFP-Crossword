@@ -1,11 +1,15 @@
-//---------------------------------------------------------------------------
+﻿//---------------------------------------------------------------------------
 #include <iostream>
 #include <string>
+#include <algorithm>
+#include <vector>
 #include <fmx.h>
 #include <random>
 #pragma hdrstop
 
 #include "Wordle.h"
+
+
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.fmx"
@@ -20,7 +24,7 @@ std::string AnsKey[] =  {"MONKE", "FROTH", "FLUID"};
 
 std::string selectAnsKey(){
 
-	return AnsKey[std::randint(0,2)];
+	return AnsKey[std::experimental::randint(0,2)];
 }
 std::string key (selectAnsKey());
 
@@ -771,26 +775,60 @@ void __fastcall TForm1::MClick(TObject *Sender)
 //---------------------------------------------------------------------------
 
 
-
-void __fastcall TForm1::Disp1Click(TObject *Sender)
-{
-   if(key[0] == Disp1->Text){
-		Disp1->FontColor=claLawngreen;
-   }else if(key.find(Disp1->Text)){
-
-   }
-}
-//---------------------------------------------------------------------------
-
 void __fastcall TForm1::CheckClick(TObject *Sender)
 {
-	for(int i = 0; i < 5; i++){
-        String a = key[i];
-		if(key[0] == Disp1->Text){
-            Disp1->FontColor=claLawngreen;
-		}else if(a == Disp1->Text && i != 1){
-		}
+	String ans = Disp1->Text + Disp2->Text + Disp3->Text + Disp4->Text + Disp5->Text;
+	//Disp 1
+	if(key[0] == Disp1->Text){
+		Disp1->FontColor=claLawngreen;
+
+	}else if(Disp1->Text == key[1] || Disp1->Text == key[2] || Disp1->Text == key[3] ||
+		Disp1->Text == key[4]){
+			Disp1->FontColor=claYellow;
+	}else {
+			Disp1->FontColor=claRed;
 	}
+	//Disp 2
+	if(key[1] == Disp2->Text){
+		Disp2->FontColor=claLawngreen;
+
+	}else if(Disp2->Text == key[0] || Disp2->Text == key[2] || Disp2->Text == key[3] ||
+		Disp2->Text == key[4]){
+			Disp2->FontColor=claYellow;
+	}else {
+			Disp2->FontColor=claRed;
+	}
+	//Disp 3
+    if(key[2] == Disp3->Text){
+		Disp3->FontColor=claLawngreen;
+
+	}else if(Disp3->Text == key[0] || Disp3->Text == key[1] || Disp3->Text == key[3] ||
+		Disp3->Text == key[4]){
+			Disp3->FontColor=claYellow;
+	}else {
+			Disp3->FontColor=claRed;
+	}
+    //Disp 4
+	if(key[3] == Disp4->Text){
+		Disp4->FontColor=claLawngreen;
+
+	}else if(Disp4->Text == key[0] || Disp4->Text == key[1] || Disp4->Text == key[2] ||
+		Disp4->Text == key[4]){
+			Disp4->FontColor=claYellow;
+	}else {
+			Disp4->FontColor=claRed;
+	}
+	//Disp 5
+	if(key[4] == Disp5->Text){
+		Disp5->FontColor=claLawngreen;
+
+	}else if(Disp5->Text == key[1] || Disp5->Text == key[2] || Disp5->Text == key[3] ||
+		Disp5->Text == key[0]){
+			Disp5->FontColor=claYellow;
+	}else {
+			Disp5->FontColor=claRed;
+	}
+
 }
 //---------------------------------------------------------------------------
 
