@@ -24,7 +24,7 @@ int main()
         //Prompt Asking Players to Enter their Inputs
         cout<<" "<<endl;
         cout<<"You have "<<attempts<<" attempts left."<<endl;
-        cout<<"Enter Your Answer(Letter by letter): "<<endl;
+        cout<<"Enter Your Answer(Five Letters): "<<endl;
         //Requesting User Input
         cin>> ans1;
         cin>> ans2;
