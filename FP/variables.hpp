@@ -1,4 +1,8 @@
 #include <iostream>
+#include <array>
+#include <string>
+#include <random>
+#include <algorithm>
 using namespace std;
 
 int attempts = 6;
