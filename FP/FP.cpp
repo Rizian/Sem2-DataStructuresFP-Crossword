@@ -1,22 +1,10 @@
 #include <iostream>
+#include "variables.hpp"
 #include <experimental/random>
 #include <bits/stdc++.h>
 #include <array>
 
 using namespace std;
-
-int attempts = 6;
-bool run = true;
-char ans1,ans2,ans3,ans4,ans5;
-string AnsKey[] =  {"FROTH", "FLUID", "MONKE","GOOSE","ATONE","MOUTH","PLAIN"};
-array<int,7> s= {0,1,2,3,4,5,6};
-unsigned seed = 1;
-
-string selectAnsKey(){
-        shuffle(s.begin(),s.end(),default_random_engine(seed));
-        return AnsKey[s[1]];
-}
-string key = selectAnsKey();
 
 int main()
 {
@@ -24,8 +12,9 @@ int main()
     
     while(run){
         if(attempts < 1){
-            cout<<"GAME OVER"<<endl;
-            run == false;
+                cout<<" "<<endl;
+                cout<<"GAME OVER, Attempts left: "<<attempts<<endl;
+                break;
         }
         cout<<" "<<endl;
         cout<<"You have "<<attempts<<" attempts left."<<endl;
@@ -40,64 +29,67 @@ int main()
         char char3 = toupper(ans3);
         char char4 = toupper(ans4);
         char char5 = toupper(ans5);
+        cout<<" "<<endl;
 
-        char concat [] = {char1,char2,char3,char4,char5};
+        char concat [5] = {char1,char2,char3,char4,char5};
+        char concat1 = char1+char2+char3+char4+char5;
 
         if(sizeof(concat) > 5){
                 cout<<"Please enter 5-letter words!!"<<endl;
                 continue;
         }
 
-        if(key[0] == char1){
-		    cout<<char1<<" Exists in word, Position correct."<<endl;
+        cout<<concat<<endl;
 
-        }else if(char1 == key[1] || char1 == key[2] || char1 == key[3] || char1 == key[4]){
-                cout<<char1<<" Exists in word, Position incorrect"<<endl;
-        }else {
-                cout<<char1<<" Does not exist in word"<<endl;
-        }
-        //char 2
-        if(key[1] == char2){
-            cout<<char2<<" Exists in word, Position correct."<<endl;
+        // if(key[0] == char1){
+	// 	cout<<char1<<" Exists in word, Position correct."<<endl;
 
-        }else if(char2 == key[0] || char2 == key[2] || char2 == key[3] || char2 == key[4]){
-                cout<<char2<<" Exists in word, Position incorrect"<<endl;
-        }else {
-                cout<<char2<<" Does not exist in word"<<endl;
-        }
-        //char 3
-        if(key[2] == char3){
-            cout<<char3<<" Exists in word, Position correct."<<endl;
+        // }else if(char1 == key[1] || char1 == key[2] || char1 == key[3] || char1 == key[4]){
+        //         cout<<char1<<" Exists in word, Position incorrect"<<endl;
+        // }else {
+        //         cout<<char1<<" Does not exist in word"<<endl;
+        // }
+        // //char 2
+        // if(key[1] == char2){                
+        //     cout<<char2<<" Exists in word, Position correct."<<endl;
 
-        }else if(char3 == key[0] || char3 == key[1] || char3 == key[3] || char3 == key[4]){
-                cout<<char3<<" Exists in word, Position incorrect"<<endl;
-        }else {
-                cout<<char3<<" Does not exist in word."<<endl;
-        }
-        //char 4
-        if(key[3] == char4){
-            cout<<char4<<" Exists in word, Position correct."<<endl;
+        // }else if(char2 == key[0] || char2 == key[2] || char2 == key[3] || char2 == key[4]){
+        //         cout<<char2<<" Exists in word, Position incorrect"<<endl;
+        // }else {
+        //         cout<<char2<<" Does not exist in word"<<endl;
+        // }
+        // //char 3
+        // if(key[2] == char3){               
+        //     cout<<char3<<" Exists in word, Position correct."<<endl;
 
-        }else if(char4 == key[0] || char4 == key[1] || char4 == key[2] || char4 == key[4]){
-                cout<<char4<<" Exists in word, Position incorrect."<<endl;
-        }else {
-                cout<<char4<<" Does not exist in word."<<endl;
-        }
-        //char 5
-        if(key[4] == char5){
-            cout<<char5<<" Exists in word, Position correct."<<endl;
+        // }else if(char3 == key[0] || char3 == key[1] || char3 == key[3] || char3 == key[4]){
+        //         cout<<char3<<" Exists in word, Position incorrect"<<endl;
+        // }else {
+        //         cout<<char3<<" Does not exist in word."<<endl;
+        // }
+        // //char 4
+        // if(key[3] == char4){
+        //     cout<<char4<<" Exists in word, Position correct."<<endl;
 
-        }else if(char5 == key[1] || char5 == key[2] || char5 == key[3] || char5 == key[0]){
-                cout<<char5<<" Exists in word, Position incorrect."<<endl;
-        }else {
-                cout<<char5<<" Does not exist in word."<<endl;
-        }
+        // }else if(char4 == key[0] || char4 == key[1] || char4 == key[2] || char4 == key[4]){
+        //         cout<<char4<<" Exists in word, Position incorrect."<<endl;
+        // }else {
+        //         cout<<char4<<" Does not exist in word."<<endl;
+        // }
+        // //char 5
+        // if(key[4] == char5){
+        //     cout<<char5<<" Exists in word, Position correct."<<endl;
 
-        if(concat == key && run == true){
-                cout<<"YOU WON!! CONGRATULATIONS.";
-                run = false;
-        }
-        attempts --;
+        // }else if(char5 == key[1] || char5 == key[2] || char5 == key[3] || char5 == key[0]){
+        //         cout<<char5<<" Exists in word, Position incorrect."<<endl;
+        // }else {
+        //         cout<<char5<<" Does not exist in word."<<endl;
+        // }
+        // if(concat == key){
+        //         cout<<"YOU WON!! CONGRATULATIONS."<<endl;
+        //         break;
+        // }
+        // attempts --;
     }
     
 }
