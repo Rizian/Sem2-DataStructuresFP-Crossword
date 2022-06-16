@@ -15,4 +15,5 @@ Justin Theofilus Yonathan - 2502036382
 Hello Ms.Nurul, this is our group's repository for the DataStructures Final Project.
 
 FP Folder contains the code for the CLI Wordle, and that is the final submission.\
-Wordle Folder contains the failed GUI attempt for the Wordle Game.
+Wordle Folder contains the failed GUI attempt for the Wordle Game.\
+Report Docs Link: https://docs.google.com/document/d/1DPEXqP6Vgp--mjxypVEGB9M5b4e19_gskGSTFV-WiUQ/edit#
