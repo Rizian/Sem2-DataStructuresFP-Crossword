@@ -4,7 +4,13 @@
         "ostream": "cpp",
         "regex": "cpp",
         "array": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "random": "cpp",
+        "typeindex": "cpp",
+        "typeinfo": "cpp",
+        "iosfwd": "cpp",
+        "chrono": "cpp",
+        "type_traits": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
